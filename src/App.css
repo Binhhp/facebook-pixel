@@ -1,0 +1,1800 @@
+:root{
+    --marginAnalytics: 25px;
+}
+
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.img-capi {
+    margin-right: 50px;
+    border: 3px solid #88888852;
+}
+
+.img-capi-selected {
+    margin-right: 50px;
+    border: 3px solid #008060;
+}
+
+.table-pixel td, .table-pixel th {
+    vertical-align: middle;
+}
+
+#btn-hidden {
+    display: none;
+}
+
+.Polaris-MediaCard {
+    flex-flow: column nowrap;
+}
+
+.orichi-main .plan p {
+    font-size: 12px;
+    line-height: 23px;
+    letter-spacing: 0.5px;
+}
+
+.orichi-main p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.orichi-main .select-plan {
+    display: inline-flex;
+}
+
+.orichi-main .choose-plan {
+    margin-top: 20px;
+}
+
+.choose-plan .pricing-plan-maximum {
+    border: 3px solid #fc973b;
+    position: relative;
+}
+
+    .choose-plan .pricing-plan-maximum .Polaris-Button {
+        border: none;
+    }
+
+    .choose-plan .pricing-plan-maximum .pricing-price-tooltip {
+        padding: 0px 20px;
+        background-color: rgb(252, 151, 59);
+        color: white;
+        display: block;
+        position: absolute;
+        top: -34px;
+        right: -2px;
+        line-height: 32px;
+    }
+
+    .choose-plan .pricing-plan-maximum .Polaris-Button {
+        background: #FC973B;
+        color: white;
+    }
+
+.pricing-plan {
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid #A0A9B050;
+    cursor: pointer;
+}
+
+    .pricing-plan:hover {
+        border: 1px solid #fc973b;
+        ;
+    }
+
+.pricing-plan-maximum:hover {
+    border: 3px solid #fc973b;
+}
+
+.pricing-price-header {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.pricing-price-description {
+    text-align: left;
+}
+
+.pricing-price {
+    font-weight: bold;
+    font-size: 38px;
+}
+
+.pricing-price-list {
+    pointer-events: none;
+    margin-bottom: 20px;
+}
+
+    .pricing-price-list .Polaris-OptionList {
+        padding: 0;
+    }
+
+        .pricing-price-list .Polaris-OptionList li.Polaris-OptionList-Option label {
+            font-size: 11px;
+            line-height: 23px;
+            background: none;
+            padding: 0;
+        }
+
+            .pricing-price-list .Polaris-OptionList li.Polaris-OptionList-Option label .Polaris-OptionList-Checkbox__Input:checked + .Polaris-OptionList-Checkbox__Backdrop {
+                background-color: #8CCA66;
+            }
+
+                .pricing-price-list .Polaris-OptionList li.Polaris-OptionList-Option label .Polaris-OptionList-Checkbox__Input:checked + .Polaris-OptionList-Checkbox__Backdrop::before {
+                    background-color: #8CCA66;
+                }
+
+            .pricing-price-list .Polaris-OptionList li.Polaris-OptionList-Option label .Polaris-OptionList-Checkbox__Input + .Polaris-OptionList-Checkbox__Backdrop {
+                background-color: #A0A9B0;
+            }
+
+                .pricing-price-list .Polaris-OptionList li.Polaris-OptionList-Option label .Polaris-OptionList-Checkbox__Input + .Polaris-OptionList-Checkbox__Backdrop::before {
+                    background-color: #A0A9B0;
+                }
+
+
+.step-setup .Polaris-Icon--colorHighlight svg {
+    fill: #008060;
+}
+
+.step-setup .Polaris-ProgressBar__Indicator {
+    background-color: #008060;
+}
+
+.step-setup .Polaris-ProgressBar--sizeMedium {
+    height: 10px;
+}
+
+.banner-step2 .Polaris-Heading {
+    font-size: 1.6rem;
+}
+
+.step3-button .Polaris-ButtonGroup {
+    display: inline-flex;
+    margin-top: 10px;
+}
+
+.step3-button {
+    text-align: center;
+}
+
+.card-button {
+    text-align: right;
+}
+
+    .card-button .Polaris-ButtonGroup {
+        display: inline-flex;
+    }
+
+.orichi-review {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin: 20px 20%;
+    width: 60%;
+    text-align: center;
+    z-index: 999;
+}
+
+    .orichi-review .Polaris-Banner__Ribbon .Polaris-Icon {
+        display: none;
+    }
+
+    .orichi-review h1 {
+        font-size: 16px;
+    }
+
+    .orichi-review .orichi-review-star {
+        margin: 10px;
+    }
+
+    .orichi-review .MuiRating-sizeLarge {
+        font-size: 40px;
+    }
+
+    .orichi-review .Polaris-Banner {
+        background: white;
+    }
+
+.btn-select-plan {
+    display: flow-root;
+    padding-right: 15px;
+}
+
+    .btn-select-plan .Polaris-ButtonGroup {
+        float: right;
+    }
+
+        .btn-select-plan .Polaris-ButtonGroup #btn-select-plan-active {
+            background-color: #FC973B;
+            color: white;
+            border: none;
+        }
+
+            .btn-select-plan .Polaris-ButtonGroup #btn-select-plan-active:hover {
+                background-color: #c3732b;
+                color: white;
+            }
+
+.risk-text {
+    color: red;
+}
+
+.popup-create-pixel-success {
+    text-align: center;
+    padding: 0px 40px;
+}
+
+    .popup-create-pixel-success img {
+        width: 10%;
+        margin: 15px 0px;
+    }
+
+.modal-ads-img {
+    display: block;
+    position: absolute;
+    z-index: 600;
+    top: -105px;
+    right: 340px;
+}
+
+.modal-ads-title {
+    color: #4499A3;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.modal-ads-des {
+    padding-left: 15px;
+}
+
+    .modal-ads-des p,
+    .modal-ads-des h2 {
+        line-height: 30px;
+    }
+
+    .modal-ads-des #ads-email {
+        width: 250px;
+    }
+
+    .modal-ads-des #ads-btn {
+        background: #F5CA44;
+        border: none;
+        color: white;
+        border-radius: unset;
+    }
+
+    .modal-ads-des .Polaris-Labelled__Error {
+        display: none;
+    }
+
+    .modal-ads-des .Polaris-ButtonGroup .Polaris-ButtonGroup__Item {
+        margin-left: 0px;
+    }
+
+.modal-ads-second {
+    padding-right: 15px;
+}
+
+    .modal-ads-second p {
+        text-align: right;
+    }
+
+@media (min-width: 65.25em) {
+    .Polaris-Modal-Dialog__Modal.Polaris-Modal-Dialog--sizeLarge {
+        max-width: 85rem;
+    }
+}
+
+.feed-pricing .feed-pricing-banner .Polaris-Card__Header {
+    display: none;
+}
+
+.feed-pricing .feed-pricing-banner .feed-pricing-banner-item {
+    display: flex;
+    padding: 15px;
+}
+
+    .feed-pricing .feed-pricing-banner .feed-pricing-banner-item .feed-pricing-banner-item-image {
+        float: left;
+    }
+
+        .feed-pricing .feed-pricing-banner .feed-pricing-banner-item .feed-pricing-banner-item-image img {
+            width: 80px;
+        }
+
+    .feed-pricing .feed-pricing-banner .feed-pricing-banner-item .feed-pricing-banner-item-content {
+        float: left;
+        text-align: center;
+        padding: 10px 50px;
+    }
+
+        .feed-pricing .feed-pricing-banner .feed-pricing-banner-item .feed-pricing-banner-item-content p {
+            font-size: 15px;
+        }
+
+.feed-pricing .feed-pricing-banner .feed-pricing-banner-right {
+    padding: 0px 50px;
+    text-align: center;
+}
+
+    .feed-pricing .feed-pricing-banner .feed-pricing-banner-right img {
+        width: 90%;
+    }
+
+.feed-pricing-plan {
+    margin-top: 20px;
+}
+
+    .feed-pricing-plan .pricing-price-list {
+        padding-left: 20px;
+    }
+
+.orichi-feed .Polaris-Stack__Item {
+    margin-left: 2.6rem;
+    margin-right: 8.6rem;
+}
+
+.orichi-feed .orichi-feed-radio .Polaris-Stack__Item {
+    border: 1px solid #b4bbc582;
+    padding: 10px 15px;
+    margin: 10px 15px;
+}
+
+.orichi-feed .orichi-feed-variant {
+    margin-top: 10px;
+}
+
+.orichi-feed-url {
+    display: flex;
+}
+
+    .orichi-feed-url .orichi-feed-url-input {
+        width: 100%;
+        position: relative;
+    }
+
+        .orichi-feed-url .orichi-feed-url-input input {
+            background-color: #A7ACB1;
+        }
+
+    .orichi-feed-url .orichi-feed-url-refresh {
+        display: block;
+        top: 32px;
+        position: absolute;
+        z-index: 99;
+        right: 5px;
+        cursor: pointer;
+    }
+
+    .orichi-feed-url .orichi-feed-url-copy {
+        margin-left: 5px;
+    }
+
+.orichi-feed-radio-product-select .Polaris-Stack__Item:nth-child(2), .orichi-feed-radio-product-select .Polaris-Stack__Item:nth-child(4) {
+    display: none;
+}
+
+@media (min-width: 65.25em) {
+    .Polaris-Modal-Dialog__Modal.Polaris-Modal-Dialog--sizeLarge {
+        max-width: 135rem;
+    }
+}
+
+.orichi-feed-select-facebook-category-item-list {
+    height: 500px;
+    overflow-y: scroll;
+    padding-top: 15px;
+}
+
+    .orichi-feed-select-facebook-category-item-list .Polaris-Icon {
+        float: right;
+        margin: 5px;
+    }
+
+.orichi-feed-mapping-category table {
+    width: 100%;
+}
+
+.orichi-feed-mapping-category .orichi-feed-mapping-category-icon {
+    display: block;
+    position: absolute;
+    top: 9px;
+    right: -11px;
+    z-index: 22;
+}
+
+#tidio-chat iframe {
+    inset: auto 9px 5px auto !important;
+}
+
+.Polaris-Modal-Dialog--sizeLarge .Polaris-Modal-Footer .Polaris-Stack__Item--fill {
+    max-width: 0;
+}
+
+.help-getting-in-touch .Polaris-DescriptionList .Polaris-DescriptionList__Term {
+    padding-top: 20px;
+}
+
+.help-resources {
+    list-style-type: none;
+    padding: 0;
+}
+
+    .help-resources hr {
+        background-color: #E1E3E5;
+        ;
+        height: 1px;
+        border: 0;
+    }
+
+    .help-resources .help-resources-item .help-resources-item-title {
+        padding: 5px 0px;
+    }
+
+        .help-resources .help-resources-item .help-resources-item-title h2 {
+            font-weight: bold;
+        }
+
+            .help-resources .help-resources-item .help-resources-item-title h2 a {
+                text-decoration: none;
+                font-size: 12px;
+                color: #6a6a6a;
+            }
+
+    .help-resources .help-resources-item .help-resources-item-des p {
+        font-size: 12px;
+        color: #6A6A6A;
+    }
+
+    .help-resources .help-resources-item .help-resources-item-author {
+        display: flex;
+        padding: 10px 0px;
+    }
+
+        .help-resources .help-resources-item .help-resources-item-author p {
+            font-size: 12px;
+            color: #6A6A6A;
+            font-style: italic;
+            line-height: 50px;
+        }
+
+        .help-resources .help-resources-item .help-resources-item-author .help-resources-item-author-avatar img {
+            width: 50px;
+            border-radius: 25px;
+        }
+
+        .help-resources .help-resources-item .help-resources-item-author .help-resources-item-author-date {
+            padding-left: 20px;
+        }
+
+.help-resources-footer {
+    text-align: center;
+}
+
+.calendly-badge-widget {
+    left: 20px !important;
+    right: unset;
+    z-index: 99 !important;
+}
+
+.help-discount-code .Polaris-Connected__Item {
+    margin-left: 0;
+}
+
+    .help-discount-code .Polaris-Connected__Item .Polaris-Button {
+        color: white;
+        background: #F5CA44;
+        border: none;
+        border-radius: unset;
+    }
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: visible;
+    opacity: 1;
+    z-index: 50;
+}
+
+
+.popup {
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 529px;
+    position: relative;
+    transition: all 5s ease-in-out;
+    height: 941px;
+}
+
+.modal-ads-xmas .popup {
+    background-image: url('/src/assets/images/ChristmasDiscount.png');
+    background-size: 100% 100%;
+}
+
+.modal-ads-xmas .popup-gif {
+    background-image: url('/src/assets/images/ChristmasDiscount.gif');
+    background-size: 100% 100%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 529px;
+    position: relative;
+    transition: all 5s ease-in-out;
+    height: 941px;
+}
+
+.modal-ads-xmas .modal-ads-xmas-content {
+    height: 100%;
+}
+
+.modal-ads-xmas .modal-ads-xmas-step1 {
+    text-align: center;
+    margin-top: 600px;
+}
+
+    .modal-ads-xmas .modal-ads-xmas-step1 button, .modal-ads-xmas .modal-ads-xmas-step1 button:hover {
+        background: #D82C0D;
+        color: white;
+        border: none;
+    }
+
+        .modal-ads-xmas .modal-ads-xmas-step1 button span {
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: 3px;
+        }
+
+.modal-ads-xmas-step2 {
+    text-align: center;
+    color: white;
+}
+
+    .modal-ads-xmas-step2 .modal-ads-xmas-step2-des h2 {
+        font-size: 30px;
+        line-height: 60px;
+        font-weight: bold;
+    }
+
+    .modal-ads-xmas-step2 .modal-ads-xmas-step2-des p {
+        font-size: 15px;
+        line-height: 20px;
+        font-style: italic;
+    }
+
+    .modal-ads-xmas-step2 .modal-ads-xmas-step2-star {
+        margin: 20px;
+    }
+
+        .modal-ads-xmas-step2 .modal-ads-xmas-step2-star .MuiRating-sizeLarge {
+            font-size: 50px;
+        }
+
+        .modal-ads-xmas-step2 .modal-ads-xmas-step2-star .MuiRating-iconEmpty {
+            color: #ffb400;
+        }
+
+    .modal-ads-xmas-step2 .modal-ads-xmas-step2-code {
+        width: 50%;
+        margin: 20px auto;
+        line-height: 50px;
+        border: 3px dotted #B90505;
+        background: #ffffff42;
+        font-weight: bold;
+    }
+
+    .modal-ads-xmas-step2 .modal-ads-xmas-step2-thankyou {
+        text-align: center;
+    }
+
+        .modal-ads-xmas-step2 .modal-ads-xmas-step2-thankyou p {
+            text-align: left;
+            letter-spacing: 1px;
+            margin: 40px 40px;
+            line-height: 30px;
+        }
+
+    .modal-ads-xmas-step2 .modal-ads-xmas-step2-comment .Polaris-Button {
+        margin: 10px 0px;
+    }
+
+.xmas-icon {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 300px;
+    transform: rotate( -90deg);
+}
+
+    .xmas-icon img {
+        width: 100px;
+    }
+
+/* Banner */
+.banner {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 400;
+    overflow: hidden;
+}
+
+.hide-banner {
+    display: none;
+}
+
+.banner .banner-block {
+    position: relative;
+}
+
+    .banner .banner-block .intro {
+        /* background: #C33D45; */
+        background-size: contain;
+        position: fixed;
+        top: 5%;
+        right: 0;
+        width: 40%;
+        height: 90%;
+    }
+
+        .banner .banner-block .intro .info {
+            float: right;
+            background: #FFFAEB;
+            width: 60%;
+            height: 100%;
+            margin-right: 40px;
+            overflow: auto;
+        }
+
+
+            .banner .banner-block .intro .info::-webkit-scrollbar {
+                width: 5px;
+            }
+
+            .banner .banner-block .intro .info::-webkit-scrollbar-track {
+                background-color: #e4e4e4;
+                border-radius: 100px;
+            }
+
+            .banner .banner-block .intro .info::-webkit-scrollbar-thumb {
+                background-color: #C33D45;
+                border-radius: 100px;
+            }
+
+            .banner .banner-block .intro .info .Polaris-Heading {
+                font-size: 2.8rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                line-height: 3.1rem;
+                text-align: right;
+                padding-right: 20px;
+                padding-left: 20px;
+                box-sizing: border-box;
+                padding-top: 4px;
+            }
+
+            .banner .banner-block .intro .info .year {
+                text-align: right;
+                color: #C33D45;
+                font-size: 5rem;
+                font-weight: bold;
+                line-height: 5rem;
+                padding-right: 20px;
+            }
+
+            .banner .banner-block .intro .info .underline {
+                background: #C33D45;
+                margin-top: 15px;
+                margin-right: 20px;
+                height: 12px;
+                width: 14%;
+                float: right;
+            }
+
+            .banner .banner-block .intro .info p {
+                font-size: 14px;
+                line-height: 20px;
+                margin-bottom: 10px;
+                padding: 0 20px;
+            }
+
+                .banner .banner-block .intro .info p a {
+                    text-decoration: none;
+                    border-bottom: 1px solid #C33D45;
+                }
+
+            .banner .banner-block .intro .info .holiday_code {
+                background-color: #DB4F6D;
+                color: #fff;
+                text-transform: uppercase;
+                text-align: center;
+                font-size: 1.5em;
+                font-weight: 500;
+                padding-top: 3px;
+                padding-bottom: 5px;
+            }
+
+.c_DB4F6D {
+    color: #DB4F6D;
+    font-weight: 700;
+}
+
+.banner .banner-block .intro .info .message {
+    text-align: right;
+    /* width: 80%; */
+    padding-top: 20px;
+    font-style: italic;
+    padding-left: 42px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+
+.banner .banner-block .main {
+    background: #C33D45;
+    position: fixed;
+    top: 5%;
+    right: 0;
+    width: 40%;
+    height: 90%;
+}
+
+    .banner .banner-block .main .frame {
+        background-color: #FFFAEB;
+        width: 80%;
+        height: 80%;
+        margin: auto;
+        margin-top: 40px;
+        padding: 4px;
+    }
+
+        .banner .banner-block .main .frame::before {
+            content: "";
+            background: #C33D45;
+            width: 50px;
+            height: 100px;
+            right: 13%;
+            top: 40px;
+            position: absolute;
+            border-radius: 0 0 50px 50px;
+        }
+
+        .banner .banner-block .main .frame .content {
+            padding: 2px;
+            height: 100%;
+            border: 1px solid #C33D45;
+            position: relative;
+        }
+
+    .banner .banner-block .main .content::before {
+        content: "";
+        background: #C33D45;
+        width: 95%;
+        height: 1px;
+        bottom: 50px;
+        position: absolute;
+        margin: auto;
+        text-align: center;
+        display: block;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .banner .banner-block .main .content .title {
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-left: 20px;
+        padding-top: 55px;
+    }
+
+    .banner .banner-block .main .content .Polaris-Button {
+        color: #fff;
+        font-size: 16px;
+        background: #C33D45;
+        border: none;
+        padding: 2px 10px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .banner .banner-block .main .content .common {
+        margin-top: 55px;
+        text-align: center;
+    }
+
+        .banner .banner-block .main .content .common .vote-star .enjoy {
+            font-size: 2.6rem;
+            font-weight: 400;
+        }
+
+        .banner .banner-block .main .content .common .vote-star .message {
+            padding-top: 15px;
+            font-size: 1.4rem;
+            font-style: italic;
+            line-height: 1.7rem;
+            width: 50%;
+            margin: auto;
+        }
+
+        .banner .banner-block .main .content .common .vote-star .star {
+            padding-top: 30px;
+        }
+
+            .banner .banner-block .main .content .common .vote-star .star .star-ratings .star-container svg {
+                width: 30px !important;
+                height: 30px !important;
+            }
+
+        .banner .banner-block .main .content .common .send-improvement p {
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .banner .banner-block .main .content .common .send-improvement .Polaris-TextField--multiline {
+            width: 80%;
+            margin: auto;
+        }
+
+        .banner .banner-block .main .content .common .send-improvement .Polaris-InlineError {
+            padding-left: 40px;
+        }
+
+        .banner .banner-block .main .content .common .send-improvement textarea {
+            background: #DB4F6D;
+            opacity: 0.54;
+            color: #fff;
+            max-height: 106px;
+        }
+
+        .banner .banner-block .main .content .common .thank-you p {
+            padding: 0 30px;
+            line-height: 25px;
+            text-align: left;
+        }
+
+        .banner .banner-block .main .content .common .thank-you .Polaris-Button {
+            position: absolute;
+            bottom: 70px;
+            left: 50%;
+            margin-left: 0;
+            transform: translateX(-50%);
+        }
+
+        .banner .banner-block .main .content .common .MuiRating-sizeLarge {
+            font-size: 3.875rem;
+        }
+
+        .banner .banner-block .main .content .common .MuiRating-root {
+            color: #C33D45;
+        }
+
+        .banner .banner-block .main .content .common .MuiRating-iconEmpty {
+            color: #C33D45;
+        }
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.pointer:hover {
+    cursor: pointer;
+}
+
+.cb {
+    clear: both;
+}
+
+/* Suggestion */
+.suggestion {
+    background-color: #fff;
+}
+
+    .suggestion .light-fixed {
+        position: fixed;
+        top: 1rem;
+        right: 0;
+    }
+
+    .suggestion .light-hide {
+        right: -100%;
+        transition: 1s all ease-in-out;
+        -moz-transition: 1s all ease-in-out;
+    }
+
+    .suggestion .light-show {
+        right: 0;
+        transition: 0.5s all ease-in-out;
+        -moz-transition: 0.5s all ease-in-out;
+    }
+/* .tag-horizontal:hover img{
+    width: 6.5rem;
+    transition: 0.5s all ease-in-out; -moz-transition: 0.5s all ease-in-out;
+}
+.tag-horizontal:not(:hover) img{
+    transition: 0.5s all ease-out; -moz-transition: 0.5s all ease-out;
+} */
+.tag-horizontal img {
+    width: 5.5rem;
+    animation: zoominoutsinglefeatured 1.5s infinite;
+}
+
+@keyframes zoominoutsinglefeatured {
+    0% {
+        transform: scale(1,1);
+    }
+
+    50% {
+        transform: scale(1.2,1.2);
+    }
+
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+.suggestion .feature-fixed {
+    background-color: #fff;
+    position: fixed;
+    top: 1%;
+    width: 450px;
+    height: 88%;
+    z-index: 400;
+}
+
+.suggestion .feature-hide {
+    right: -100%;
+    transition: 1s all ease-in-out;
+    -moz-transition: 1s all ease-in-out;
+}
+
+.suggestion .feature-show {
+    right: 0;
+    transition: 1s all ease-in-out;
+    -moz-transition: 1s all ease-in-out;
+}
+/* .suggestion .header {
+    position: absolute;
+    width: 80%;
+    top: -20px;
+    right: 0;
+} */
+.suggestion .header .block-light {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: #EDB209;
+    padding: 4px 0;
+    position: relative;
+}
+
+    .suggestion .header .block-light .title {
+        color: #fff;
+        font-weight: 700;
+        padding-left: 20px;
+        padding-right: 50px;
+        font-size: 2.5rem;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        box-sizing: border-box;
+    }
+
+    .suggestion .header .block-light .image {
+        padding-right: 2px;
+        position: absolute;
+        top: -45%;
+        right: 0;
+    }
+
+        .suggestion .header .block-light .image img {
+            width: 45px;
+        }
+
+.suggestion .header .label {
+    font-style: italic;
+    text-align: right;
+    margin-top: 5px;
+    margin-right: 15px;
+    color: #000;
+}
+
+.suggestion .new-feature {
+    margin-top: 20px;
+    max-height: 600px;
+    overflow-y: scroll;
+    position: relative;
+}
+
+    .suggestion .new-feature::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .suggestion .new-feature::-webkit-scrollbar-track {
+        background-color: #e4e4e4;
+        border-radius: 100px;
+    }
+
+    .suggestion .new-feature::-webkit-scrollbar-thumb {
+        background-color: #EDB209;
+        border-radius: 100px;
+    }
+
+    .suggestion .new-feature .Polaris-Card {
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .suggestion .new-feature .tag-feature {
+        margin-bottom: 10px;
+    }
+
+        .suggestion .new-feature p span,
+        .suggestion .new-feature .tag-feature span {
+            font-weight: 500;
+        }
+
+        .suggestion .new-feature .tag-feature a {
+            text-decoration: none;
+            color: #EDB209;
+            font-weight: 700;
+            padding-left: 2px;
+            font-size: 20px;
+        }
+
+            .suggestion .new-feature .tag-feature a:hover {
+                box-shadow: #fff;
+            }
+
+.suggestion .dismiss {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px;
+}
+
+.suggestion .tag-dismiss {
+    margin: auto;
+}
+
+.suggestion .dismiss img {
+    width: 20px;
+}
+
+.suggestion .new-feature .list-feature {
+    max-height: 450px;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+    .suggestion .new-feature .list-feature .item-feature {
+        position: relative;
+        padding: 20px 5px;
+        margin-bottom: 20px;
+        margin-right: 5px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        border-left: 1px solid #EDB209;
+        box-shadow: 0px 4px 7px rgba(139, 139, 139, 0.08);
+    }
+
+        .suggestion .new-feature .list-feature .item-feature .vote-number {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #EDB209;
+            line-height: 16px;
+            color: #000;
+            font-weight: 500;
+            width: 40px;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .suggestion .new-feature .list-feature .item-feature .your-suggestion {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: #EDB209;
+            color: #000;
+            font-weight: 500;
+            font-size: 12px;
+            padding: 0 4px;
+        }
+
+    .suggestion .new-feature .list-feature::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .suggestion .new-feature .list-feature::-webkit-scrollbar-track {
+        background-color: #e4e4e4;
+        border-radius: 100px;
+    }
+
+    .suggestion .new-feature .list-feature::-webkit-scrollbar-thumb {
+        background-color: #EDB209;
+        border-radius: 100px;
+    }
+
+    .suggestion .new-feature .list-feature .item-feature:last-child {
+        margin-bottom: 5px;
+    }
+
+    .suggestion .new-feature .list-feature .item-feature .left {
+        width: 15%;
+        font-size: 20px;
+        text-align: center;
+    }
+
+        .suggestion .new-feature .list-feature .item-feature .left .green svg {
+            color: #188061;
+        }
+
+        .suggestion .new-feature .list-feature .item-feature .left .gray svg {
+            color: #5C5F62;
+        }
+
+    .suggestion .new-feature .list-feature .item-feature .right {
+        width: calc(100% - 15%);
+    }
+
+        .suggestion .new-feature .list-feature .item-feature .right .title {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 5px;
+            width: 85%;
+            overflow: hidden;
+            height: 16px;
+            line-height: 16px;
+        }
+
+        .suggestion .new-feature .list-feature .item-feature .right .description {
+            font-size: 12px;
+            width: 90%;
+        }
+
+.suggestion .new-feature .feature-show {
+    display: block;
+}
+
+.suggestion .new-feature .feature-hide {
+    display: none;
+}
+
+.suggestion .new-feature .form-add-feature .Polaris-Heading {
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.valid {
+    color: red;
+}
+
+.suggestion .new-feature .Polaris-Button--primary {
+    float: right;
+}
+
+.suggestion .new-feature hr {
+    color: #EEE;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.suggestion .new-feature textarea {
+    max-height: 106px;
+}
+
+/* view more */
+.my-anchor-css-class {
+    text-decoration: none;
+    color: #EDB209;
+}
+
+/* Dashboard */
+.dashboard{
+    margin-top: 2px;
+}
+.dashboard-header{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.dashboard-header img{
+    width: 31px;
+    height: 31px;
+    margin-right: 12px;
+}
+.dashboard-header p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+    word-break: break-all;
+    width: calc(100% - 43px)
+}
+.dashboard-welcome--text{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 16px;
+    background: #FFF5EA;
+    border: 1px solid #E1B878;
+    border-radius: 8px;
+    width: 100%;
+}
+.dashboard-welcome--text .dashboard-welcome--icon{
+    font-size: 20px;
+    height: 100%;
+    margin-right: 16px;
+}
+.dashboard-welcome--text p{
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    width: calc(100% - 68px);
+    color: #202223;
+}
+.dashboard-welcome--text .dashboard-welcome--close{
+    width: 12px;
+    height: 12px;
+    margin-left: 20px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+.dashboard-filter{
+    margin-top: 21px;
+    /* box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05), inset 0px -1px 0px #BCBFC3, inset 1px 0px 0px #BBBFC3, inset 0px 1px 0px #BBBFC3; */
+    background: #FFFFFF;
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.dashboard-filter .dashboard-filter--time button{
+    border-radius: 4px 0 0 4px;
+    border-right: 0px;
+}
+.dashboard-filter .dashboard-filter--pixel button{
+    border-radius: 0px 4px 4px 0px;
+}
+.dashboard-filter--time, .dashboard-filter--pixel{
+    font-family: 'SF Pro Text';
+    line-height: 20px;
+    color: #202223;
+    border-image-source: linear-gradient(180deg, #BABFC3 86.46%, #BBBFC3 100%);
+    position: relative;
+}
+
+.Polaris-Popover__Content{
+    max-width: 100% !important;
+    max-height: 100% !important;
+}
+.dashboard-filter--date{
+    padding: 20px;
+    width: 453px;
+}
+@media screen and (max-width: 767px) {
+    .dashboard-filter--date{
+        width: 100%
+    }
+}
+.dashboard-filter-timezones{
+    width: 100%;
+}
+.dashboard-filter--monthly{
+    margin-top: 20px;
+    width: 100%;
+}
+.dashboard-filter--monthlyText .input-time{
+    width: calc(50% - 5px);
+}
+.ml{
+    margin-left: 5px;
+}
+.mr{
+    margin-right: 5px;
+}
+#datePicker .Polaris-DatePicker__MonthContainer{
+    max-width: calc(50% - 1.6rem) !important;
+    min-width: 0px;
+}
+.btn-dropdown{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 6px 6px 6px 14px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: gray;
+    margin-top: 0.4rem;
+}
+.dashboard-filter--date .Polaris-TextField__Input:disabled{
+    color: #202223;
+    background-color: #FFFFFF;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.dashboard-filter--select{
+    padding: 5px;
+    font-size: 14px;
+}
+.dashboard-filter--radio{
+    margin-left: 10px;
+}
+.dashboard-filter--select{
+    width: 300px;
+    padding: 10px 7px;
+}
+.dashboard-filter--item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.dashboard-filter--item .Polaris-Badge--sizeSmall{
+    font-size: 1rem !important;
+    line-height: 20px !important;
+    height: 20px;
+}
+.dashboard-items--pageItem{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 52.12px;
+    width: 100%;
+}
+.dashboard-items--page{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 21px 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    width: auto;
+    flex: 1;
+}
+.dashboard-items{
+    width: auto;
+    margin-left: -12.5px;
+    margin-right: -12.5px;
+}
+.mr-5{
+    margin: 0 12.5px;
+}
+.dashboard-items--header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.dashboard-items--title{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #849AA9;
+}
+.dashboard-items--content{
+    display: flex;
+    flex-direction: row;
+    margin-top: 16.2px;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-content: flex-end;
+}
+.dashboard-items--totalEvents{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 16px;
+    color: #555555;
+    word-break: break-all;
+}
+.dashboard-items--conversation{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 16px;
+    color: #2CDDC7;
+}
+.dashboard-content{
+    width: 100%;
+    margin-top: 34.12px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+@media screen and (max-width: 1200px){
+    .dashboard-content{
+        display: block;
+        flex-direction: column;
+    }
+    .dashboard-content .dashboard-chart,
+    .dashboard-content .dashboard-tabs{
+        width: 100%;
+    }
+    .dashboard-items--pageItem{
+        display: block;
+        flex-direction: column;
+    }
+    .dashboard-items--pageItem .dashboard-items--page{
+        margin-bottom: 15px;
+    }
+    .dashboard-filter button span{
+        font-size: 11px !important;
+        min-width: auto;
+    }
+    .dashboard-header p{
+        font-size: 14px !important
+    }
+    .dashboard-filter--submit #selected span,
+    .dashboard-filter--submit #reset span{
+        font-size: 13px !important
+    }
+}
+.dashboard-chart{
+    width: 64%;
+    height: auto;
+    margin-right: 28px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 20px 5px;
+    position: relative;
+}
+.dashboard-tabs{
+    width: calc(36% - 28px);
+}
+.dashboard-whatNew{
+    max-width: 100vw;
+    width: 100%;    
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 21px;
+}
+.dashboard-whatNew--img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(0px);
+}
+.dashboard-tabs--posts{
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: -8.54241px 41.5133px 119.594px rgba(126, 123, 160, 0.2);
+    backdrop-filter: blur(16.2306px);
+    padding: 15px 21px;
+    border-radius: 9.22518px;
+}
+.dashboard-tabs--posts .post-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.dashboard-tabs--posts .post-header img{
+    width: 31px;
+    height: 31px;
+    margin-right: 10px;
+}
+.dashboard-tabs--posts .post-header span {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #4C4C66;
+}
+.post-content{
+    margin-top: 36px;
+}
+.post-item{
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12.9153px;
+    line-height: 16px;
+    color: #4C4C66;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+.post-title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12.92px;
+    line-height: 16px;
+    color: #4C4C66;
+    mix-blend-mode: normal;
+    cursor: pointer;
+    text-decoration: none;
+}
+.post-desc{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11.0702px !important;
+    line-height: 13px;
+    color: #6F6C99;
+    margin-top: 6.14px;
+}
+.post-created{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 10.1477px;
+    line-height: 12px;
+    color: #6F6C99;
+    mix-blend-mode: normal;
+    margin-top: 12px;
+}
+.dot{
+    margin: 12px 0;
+    border: 1px solid #F3F3F5;
+}
+.view-more-post{
+    margin-top: 32.73px;
+    text-align: right;
+    width: 100%;
+    text-align: center;
+}.view-more-post a{
+    text-decoration: none;
+    color: #3279CC;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11.0702px;
+    line-height: 11.0702px;
+}
+.dashboard-filter--submit{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top:10px;
+    align-items: stretch;
+}
+.dashboard-filter--submit #selected{
+    margin-right: 10px;
+    width: calc(50% - 10px)
+}
+.dashboard-filter--submit #reset{
+    margin-left: 5px;
+}
+.dashboard-filter--submit #selected{
+    margin-right: 5px;
+    background-color: rgba(44, 110, 203, 1);
+    color: #FFF5EA;
+}
+.dashboard-filter--submit button{
+    width: 50%;
+    font-size: 11px;
+}
+.Polaris-ActionList__Actions li[role="menuitem"]:hover, .Polaris-ActionList__Item:active{
+    background-color: #E9F6FE !important;
+}
+.swiper-pagination-bullet{
+    display: none !important;
+}
+.dashboard-filter-timezones div[aria-controls="Polarispopover4"]{
+    margin-top: 4px;
+}
+canvas {
+    height: 100% !important;
+}
+.dashboard-items--totalEvents-empty{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+}
+.dashboard-items--totalEvents-empty .Polaris-Icon{
+    width: 1rem;
+    height: 1rem
+}
+.chart-loading{
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+.popup-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+.d-flex{
+    display: flex;
+}
+.align-items-center{
+    align-items: center;
+}
+label{
+    font-weight: 700;
+}
+.Tiktok-pixel{
+    background: #FFFFFF;
+    box-shadow: 0px 2px 1px rgb(0 0 0 / 5%), 0px 0px 1px rgb(0 0 0 / 25%);
+    border-radius: 8px;
+    padding: 38px 26px;
+}
+.Tiktok-pixel .Tiktok-pixel-button{
+    margin-left: 100px;
+}
+.Tiktok-setup{
+    display: flex;
+}
+.Tiktok-setup .form-header{
+    justify-content: space-between;
+    margin-bottom: 4px;
+}.Tiktok-setup .form-header label,a{
+     font-weight: 400;
+     font-size: 14px;
+}
+.Polaris-Modal-Header .Polaris-Modal-Header__Title h2{
+     text-align: center;
+     color: #11100E;
+     font-weight: 700;
+ }
+.Tiktok-badge{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.05), 0px 0px 1px rgba(66, 71, 76, 0.45);
+    transform: translateY(100%);
+    transition: .5s;
+}
+.Tiktok-badge.active{
+    transform: translateY(0);
+}
+.Tiktok-badge-left{
+    background: #000000;
+    color: white;
+    padding: 29px 0;
+    text-align: center;
+    margin-right: 20px;
+}
+.Tiktok-badge-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+.Tiktok-badge-right h3{
+    font-weight: 600;
+    font-size: 17px;
+    color: #58BCBA;
+}
+.Tiktok-badge-right p{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #6D7175;
+    margin-top: 10px;
+}
+.Tiktok-badge-right p a{
+    color: #6193D8;
+    margin-left: 8px;
+}
+.button-status{
+    margin-bottom: 10px;
+}
+.button-status .Polaris-ButtonGroup{
+    margin-bottom: 40px;
+}
+.button-status .Polaris-ButtonGroup__Item:last-child{
+    margin-left: 0;
+
+
+}
+.button-status .Polaris-ButtonGroup__Item:last-child button{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.button-status .Polaris-ButtonGroup__Item:first-child button{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.Polaris-Scrollable{
+    position: static;
+}
+.Modal-gif {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -96%);
+}
+.error{
+    color: red;
+}
